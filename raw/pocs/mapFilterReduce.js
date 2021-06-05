@@ -1,4 +1,4 @@
-let arr = [1,2,3,4,5,6,7];
+// let arr = [1,2,3,4,5,6,7];
 
 //to twice eles of this arrray to a new array
 
@@ -14,9 +14,32 @@ let arr = [1,2,3,4,5,6,7];
 //that either accepts a function as an argument
 // or returns a function 
 
-let df = function(el){
-    return 2 * el;
+// let df = function(el){
+//     return 2 * el;
+// }
+// let darr = arr.map(df);
+// console.log(darr);
+// console.log(arr);
+
+
+///////////////Filter/////////////////////////////
+// used to filter according to our need
+let words =  ['mera','tera','sabka','hamara'];
+// let fArr = []; 
+// for(let i = 0; i < words.length; i++){
+//     let  word = words[i];
+//     if(word.length > 4){
+//         fArr.push(word);
+//     }
+// }
+// console.log(fArr);
+
+
+
+// Returns the elements of an array that meet the condition specified in a callback function.//
+
+let filter = function(word){
+    return word.length > 4;
 }
-let darr = arr.map(df);
-console.log(darr);
-console.log(arr);
+let fArr = words.filter(filter);
+console.log(fArr);
