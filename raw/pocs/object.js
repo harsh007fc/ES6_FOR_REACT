@@ -17,7 +17,23 @@ let person = {name:'harsh',place:'nangal',job:'student'};
 
 
 /////ALIASES
-let {name:a,place:b,job:c} = person;
-console.log(a);
-console.log(b);
-console.log(c);
+// let {name:a,place:b,job:c} = person;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// let person2 = person;
+// person2.name = 'harshit';
+
+// console.log(person);
+// console.log(person2);
+
+
+///////////SPREAD OPERATOR
+
+let person3 = {...person};
+
+person3.name = 'harshit';
+
+console.log(person);
+console.log(person3);
