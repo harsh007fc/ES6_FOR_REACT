@@ -80,4 +80,7 @@ let arr = [1,2,3,4,5,6,7,8,9];
 // console.log(arr);
 
 
-narr = [arr.slice(0,idx)]
+narr = [...arr.slice(0,idx),1000,...arr.slice(idx)];
+narr[0] = 6000;
+console.log(narr);
+console.log(arr);
