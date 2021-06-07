@@ -14,7 +14,13 @@ let user = {
 
 
 /////it does shallow copying
-let copy = {...user};
+// let copy = {...user};
+
+//still not a deeep copy if more inherited objects are present
+// let copy = {...user,degree:{...user.degree},location:{...user.location}}
+
+//it is the deep copy 
+let copy = JSON.parse(JSON.stringify(user));
 
 copy.degree.gpa = "bekaaar";
 
