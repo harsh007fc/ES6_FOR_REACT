@@ -1,7 +1,7 @@
 // Q find the output of the following code 
 
-let a = ["a", "b"]
-a[2] = a 
+let a = ["a", "b"];
+a[2] = a ;
 
 function f(a) {
     a = a[2]

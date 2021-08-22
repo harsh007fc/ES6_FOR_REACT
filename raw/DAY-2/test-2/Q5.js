@@ -10,3 +10,8 @@ function reduce(arr, reducer) {
   return ans;
 }
 
+let arr= [1,2,3];
+function pamm(total,num){
+ return total - num;
+}
+console.log(reduce(arr,pamm));

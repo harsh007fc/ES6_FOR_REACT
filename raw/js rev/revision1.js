@@ -11,7 +11,6 @@ function A() {
 
     function D() {
       console.log(a+"D");
-
       a = 2;
     }
     D();

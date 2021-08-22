@@ -14,8 +14,8 @@ function mySetInterval(callback, time) {
 
 let i = mySetInterval(function () {
   console.log("Hi");
-}, 100);
+}, 1000);
 
 setTimeout(function () {
     i.working = false;
-},500)
+},5000)
